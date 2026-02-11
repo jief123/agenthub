@@ -62,8 +62,12 @@ export const regenerateApiKey = () =>
   request('/users/me/api-key/regenerate', { method: 'POST' })
 
 // Admin
-export const getAdminAssets = (type?: string, page = 1) =>
-  request(`/admin/assets?type=${type || ''}&page=${page}`)
+export const getAdminAssets = (type?: string, page = 1) => {
+  const params = new URLSearchParams()
+  if (type) params.set('type', type)
+  params.set('page', String(page))
+  return request(`/admin/assets?${params.toString()}`)
+}
 export const deleteAdminAsset = (type: string, id: number) =>
   request(`/admin/assets/${type}/${id}`, { method: 'DELETE' })
 export const getAdminUsers = (page = 1) => request(`/admin/users?page=${page}`)
