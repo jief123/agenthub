@@ -267,6 +267,4 @@ agenthub/
 - Docker Hub: `jief123/agenthub`
 - PyPI: `agenthub-cli`
 
-## License
 
-MIT
