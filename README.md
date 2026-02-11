@@ -14,6 +14,24 @@ A self-hosted registry platform for AI Agent assets — Skills, MCP Server confi
 
 > **Note:** MCP Server and Agent config sharing features are currently TBC (To Be Completed). The current release focuses on Skills registry and distribution.
 
+## Screenshots
+
+| Home & Leaderboard | Search |
+|:---:|:---:|
+| ![Home](screenshots/01-home.png) | ![Search](screenshots/02-search.png) |
+
+| Skill Detail (GitHub-style Markdown) | Login |
+|:---:|:---:|
+| ![Detail](screenshots/03-skill-detail.png) | ![Login](screenshots/04-login.png) |
+
+| Admin Dashboard | Admin Sync Sources |
+|:---:|:---:|
+| ![Admin](screenshots/05-admin.png) | ![Sync](screenshots/06-admin-sync.png) |
+
+| Profile |
+|:---:|
+| ![Profile](screenshots/07-profile.png) |
+
 ## Quick Start
 
 ### Docker (recommended)
@@ -147,6 +165,24 @@ agenthub/
 - Docker 一键部署，支持 amd64 / arm64
 
 > **注意：** MCP Server 和 Agent 配置的共享功能目前属于 TBC（待完成）。当前版本主要支持 Skills 的注册与分发。
+
+## 截图
+
+| 首页 & 排行榜 | 搜索 |
+|:---:|:---:|
+| ![Home](screenshots/01-home.png) | ![Search](screenshots/02-search.png) |
+
+| Skill 详情（GitHub 风格 Markdown） | 登录 |
+|:---:|:---:|
+| ![Detail](screenshots/03-skill-detail.png) | ![Login](screenshots/04-login.png) |
+
+| 管理后台 | 同步源管理 |
+|:---:|:---:|
+| ![Admin](screenshots/05-admin.png) | ![Sync](screenshots/06-admin-sync.png) |
+
+| 个人中心 |
+|:---:|
+| ![Profile](screenshots/07-profile.png) |
 
 ## 快速开始
 
