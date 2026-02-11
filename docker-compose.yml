@@ -1,0 +1,26 @@
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=sqlite+aiosqlite:///./data/skills_registry.db
+      - SECRET_KEY=${SECRET_KEY:-dev-secret-key}
+      - ADMIN_API_KEY=${ADMIN_API_KEY:-sr_dev-admin-key}
+      - ADMIN_USERNAME=${ADMIN_USERNAME:-admin}
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD:-admin123}
+      - ADMIN_EMAIL=${ADMIN_EMAIL:-admin@localhost.dev}
+      - SYNC_ENABLED=${SYNC_ENABLED:-false}
+      - SYNC_INTERVAL=${SYNC_INTERVAL:-86400}
+      - LOG_LEVEL=${LOG_LEVEL:-INFO}
+    volumes:
+      - appdata:/app/backend/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+volumes:
+  appdata:

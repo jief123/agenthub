@@ -1,0 +1,14 @@
+.git
+.gitignore
+aidlc-docs/
+design/
+.agents/
+.kiro/
+.vscode/
+__pycache__
+*.pyc
+.env
+*.db
+node_modules
+frontend/dist
+frontend/node_modules

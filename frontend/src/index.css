@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/* GitHub-style markdown */
+.prose pre {
+  background-color: #1f2937;
+  color: #f3f4f6;
+  border-radius: 0.5rem;
+}
+.prose code {
+  font-size: 0.875rem;
+}
+.prose img {
+  border-radius: 0.5rem;
+}

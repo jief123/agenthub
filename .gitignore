@@ -1,0 +1,28 @@
+# Environment & secrets
+.env
+*.db
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Node
+node_modules/
+frontend/dist/
+
+# IDE
+.kiro/
+.vscode/
+*.swp
+*.swo
+
+# Data
+backend/data/
+
+# OS
+.DS_Store
+Thumbs.db
